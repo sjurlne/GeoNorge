@@ -15,7 +15,7 @@ path_to_file = 'data/KommuneGrenser.geojson'
 norge = gpd.read_file(path_to_file)
 print(norge.head())
 
-land_boundary_path = 'data/no.json'
+land_boundary_path = 'data/norway_wof.geojson'
 fastland = gpd.read_file(land_boundary_path)
 
 norge = norge.to_crs(fastland.crs)
